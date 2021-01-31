@@ -1,5 +1,5 @@
-[![License](https://img.shields.io/github/license/imponeer/smarty-extensions-contracts.svg?maxAge=2592000)](LICENSE)
-[![GitHub release](https://img.shields.io/github/release/imponeer/smarty-extensions-contracts.svg?maxAge=2592000)](https://github.com/imponeer/smarty-extensions-contracts/releases) [![Maintainability](https://api.codeclimate.com/v1/badges/79f89e2fe21c0076c29a/maintainability)](https://codeclimate.com/github/imponeer/smarty-extensions-contracts/maintainability) [![PHP](https://img.shields.io/packagist/php-v/imponeer/smarty-extensions-contracts.svg)](http://php.net) 
+[![License](https://img.shields.io/github/license/imponeer/smarty-extensions-contracts.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/release/imponeer/smarty-extensions-contracts.svg)](https://github.com/imponeer/smarty-extensions-contracts/releases) [![Maintainability](https://api.codeclimate.com/v1/badges/79f89e2fe21c0076c29a/maintainability)](https://codeclimate.com/github/imponeer/smarty-extensions-contracts/maintainability) [![PHP](https://img.shields.io/packagist/php-v/imponeer/smarty-extensions-contracts.svg)](http://php.net) 
 [![Packagist](https://img.shields.io/packagist/dm/imponeer/smarty-extensions-contracts.svg)](https://packagist.org/packages/imponeer/smarty-extensions-contracts)
 
 # Smarty Extensions Contracts
