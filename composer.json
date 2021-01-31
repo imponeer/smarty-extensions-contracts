@@ -1,0 +1,29 @@
+{
+    "name": "imponeer/smarty-extensions-contracts",
+    "description": "Interfaces for defining smarty template engine extensions in object way",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Imponeer\\Contracts\\Smarty\\": "src/"
+        }
+    },
+    "require": {
+        "smarty/smarty": "~3.1",
+        "php": ">=7.1"
+    },
+    "keywords": [
+        "smarty",
+        "contracts",
+        "extensions",
+        "abstractions",
+        "decoupling",
+        "interfaces"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raimondas Rimkevičius",
+            "email": "github@mekdrop.name"
+        }
+    ]
+}
