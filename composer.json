@@ -9,7 +9,7 @@
     },
     "require": {
         "smarty/smarty": "~3.1",
-        "php": ">=7.1"
+        "php": ">=7.3"
     },
     "keywords": [
         "smarty",
