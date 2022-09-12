@@ -4,19 +4,25 @@ on:
   schedule:
     - cron: '4 9 * * 1'
 
-permissions:
-  contents: read
-
 jobs:
   update_release_draft:
+    name: Update release drafter
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
     steps:
-      - uses: release-drafter/release-drafter@v5
+      - name: Generating dummy release...
+        uses: release-drafter/release-drafter@v5
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          publish: false
+      - name: Releasing...
+        if: contains(steps.check.outputs.body, 'No changes') != true
+        uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           publish: true
-          tag-prefix: v
