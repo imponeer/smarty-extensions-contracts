@@ -20,6 +20,6 @@ interface SmartyCompilerInterface extends SmartyExtensionInterface
      *
      * @return string|void
      */
-    public function execute($args, Smarty_Internal_SmartyTemplateCompiler &$compiler);
+    public function execute($args, Smarty_Internal_SmartyTemplateCompiler $compiler);
 
 }

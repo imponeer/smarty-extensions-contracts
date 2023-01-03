@@ -19,6 +19,6 @@ interface SmartyFunctionInterface extends SmartyExtensionInterface
      * @param Smarty_Internal_Template $template Current smarty object instance
      * @return string|void
      */
-    public function execute($params, Smarty_Internal_Template &$template);
+    public function execute($params, Smarty_Internal_Template $template);
 
 }

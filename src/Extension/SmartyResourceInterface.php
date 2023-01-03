@@ -14,12 +14,12 @@ use SmartyException;
 interface SmartyResourceInterface extends SmartyExtensionInterface
 {
     /**
-     * Populate source with meta data from resource
+     * Populate source with metadata from resource
      *
      * @param Smarty_Template_Source $source source
-     * @param Smarty_Internal_Template $template template
+     * @param Smarty_Internal_Template|null $template template
      */
-    public function populate(Smarty_Template_Source $source, Smarty_Internal_Template $template = null);
+    public function populate(Smarty_Template_Source $source, ?Smarty_Internal_Template $template = null);
 
     /**
      * Load template's source into current template
