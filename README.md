@@ -4,13 +4,15 @@
 
 # Smarty Extensions Contracts
 
-[Smarty 3](https://github.com/smarty-php/smarty) still doesn't use classes for define most of the possible extensions types. This library tries to fix that - it provides all needed interfaces to define extensions in object way.
+**Archived**: Smarty 5 includes its own [extension system](https://smarty-php.github.io/smarty/stable/api/extending/extensions/), so this library is no longer maintained. For new projects, rely on the native Smarty 5 approach instead of this package.
 
-Defining smarty extensions in object way also can be useful when working with containers. Smarty extensions that could be registered with tags and then loaded when needed.
+[Smarty 3](https://github.com/smarty-php/smarty) still doesn't use classes for define most of the possible extensions types. This library tries to fix that - it provides all needed interfaces to define extensions in object way. Defining smarty extensions in object way also can be useful when working with containers. Smarty extensions that could be registered with tags and then loaded when needed.
 
 ## Installation
 
-To install and use this package, we recommend to use [Composer](https://getcomposer.org):
+This package is archived and kept for existing consumers. New projects should not depend on it because Smarty 5 already provides the needed extension system.
+
+To install and use this package in legacy setups, we recommend to use [Composer](https://getcomposer.org):
 
 ```bash
 composer require imponeer/smarty-extensions-contracts

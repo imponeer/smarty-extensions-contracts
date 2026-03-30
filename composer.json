@@ -1,6 +1,6 @@
 {
     "name": "imponeer/smarty-extensions-contracts",
-    "description": "Interfaces for defining smarty template engine extensions in object way",
+    "description": "Archived: use Smarty 5 built-in extension system for extensions",
     "type": "library",
     "autoload": {
         "psr-4": {
@@ -25,5 +25,6 @@
             "name": "Raimondas Rimkevičius",
             "email": "github@mekdrop.name"
         }
-    ]
+    ],
+    "abandoned": true
 }
