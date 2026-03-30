@@ -10,19 +10,23 @@ permissions:
   contents: write
 
 jobs:
+  php-versions:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.php_versions.outputs.matrix }}
+    steps:
+      - name: Resolve PHP versions
+        id: php_versions
+        uses: antfroger/php-version-action@v1
+
   tests:
+    needs: php-versions
     runs-on: ubuntu-latest
     continue-on-error: false
     strategy:
       max-parallel: 3
       matrix:
-        php:
-          - 7.3
-          - 7.4
-          - 8.0
-          - 8.1
-          - 8.2
-          - 8.3
+        php: ${{ fromJson(needs.php-versions.outputs.matrix) }}
         composer:
           - 2
     name: Test - php:${{ matrix.php }}; composer:${{ matrix.composer}}
